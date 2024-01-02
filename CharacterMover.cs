@@ -35,7 +35,7 @@ namespace Kalkatos.UnityGame.Character3D
         {
             if (input == null)
             {
-                //Logger.LogError("Input object must be set.");
+                Logger.LogError("Input object must be set.");
             }
             inputSource = (IInput)input;
             if (rotationObject == null)
@@ -64,7 +64,7 @@ namespace Kalkatos.UnityGame.Character3D
         {
             if (input != null && !(input is IInput))
             {
-                //Logger.LogError("Input object must implement IInput interface.");
+                Logger.LogError("Input object must implement IInput interface.");
             }
         }
     }
